@@ -2,7 +2,9 @@ import React from 'react'
 
 const Work = () => {
   return (
-    <div className='bg-black h-screen w-screen'></div>
+    <div className='bg-black h-screen w-screen'>
+      
+    </div>
   )
 }
 
