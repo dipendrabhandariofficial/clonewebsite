@@ -2,7 +2,7 @@ import React from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import Passion from "../Components/Passion";
-import Test from "../Components/test";
+import Test from "../Components/Test";
 import Togethere from "../Components/Togethere";
 import Blog from "../Components/Blog";
 
