@@ -1,52 +1,36 @@
 import React from "react";
-import {
-  FaHome,
-  FaUser,
-  FaPhone,
-  FaAdjust,
-  FaProjectDiagram,
-} from "react-icons/fa";
-import { FaRProject } from "react-icons/fa6";
-import { TbCircleLetterD, TbHexagonLetterDFilled } from "react-icons/tb";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="w-screen sticky top-0 bg-slate-50 z-20 shadow-md pr-8">
-        <div className="container flex justify-between items-center w-full px-10 pt-6 pb-4">
-          <TbHexagonLetterDFilled className="flex flex-col text-6xl text-orange-500" />
+    <nav className="w-screen sticky space-x-2 h-[82px] px-6">
+      <div className="flex justify-between items-center w-full px-16 pt-4 pb-4 leading-[21px]">
+        <div className="pl-12">
+          {/* Logo as a Link */}
+          <Link to="/" className="text-2xl">
+            <p className="text-4xl inline font-[lora,serif] font-[100] text-[40px] hover:text-[#8c6a02]">k.</p>
+          </Link>
+        </div>
 
-          <ul className="flex space-x-16 items-center justify-center text-black text-lg font-medium">
-            <li className="flex flex-col items-center  hover:text-orange-500">
-              <FaHome className="text-black-500 text-2xl" />
-              <a href="home" className="">
-                Home
-              </a>
+        <div className="px-12 pt-1">
+          {/* Navigation Links */}
+          <ul className="flex space-x-8 items-center justify-center text-black font-[300] text-[12px] tracking-[1.5px]">
+            <li className="hover:text-[#8c6a02] uppercase text-[#2c2c2c]">
+              <Link to="/">Home</Link>
             </li>
-            <li className="flex flex-col items-center  hover:text-orange-500">
-              <FaUser className="text-black-500 text-2xl " />
-              <a href="about" className="">
-                About
-              </a>
+            <li className="hover:text-[#8c6a02] uppercase text-[#2c2c2c]">
+              <Link to="/Work">Work</Link>
             </li>
-            <li className="flex flex-col items-center  hover:text-orange-500">
-              <FaAdjust className="text-black-500 text-2xl " />
-              <a href="skills" className="">
-                Skills
-              </a>
+            <li className="hover:text-[#8c6a02] uppercase text-[#2c2c2c]">
+              <Link to="/About">About</Link>
             </li>
-            <li className="flex flex-col items-center  hover:text-orange-500">
-              <FaProjectDiagram className="text-black-500 text-2xl " />
-              <a href="projects" className="">
-                Projects
-              </a>
-            </li>
-            <li className="flex flex-col items-center  hover:text-orange-500 ">
-              <FaPhone className="text-black-500 text-2xl " />
-              <a href="contact">Contact</a>
+            <li className="hover:text-[#8c6a02] uppercase text-[#2c2c2c]">
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
   );
 }
 

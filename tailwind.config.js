@@ -14,7 +14,7 @@ export default {
         fadeInUp: {
           '0%': {
             opacity: 0, // Opacity starts at 0 (invisible)
-            transform: 'translateY(30px)', // Starts slightly below
+            transform: 'translateY(90px)', // Starts slightly below
           },
           '100%': {
             opacity: 1, // Ends fully visible
@@ -22,6 +22,7 @@ export default {
           },
         },
       },
+      
     },
   },
   plugins: [],
